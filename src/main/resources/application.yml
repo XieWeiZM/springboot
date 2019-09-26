@@ -1,0 +1,67 @@
+#
+##Redisson配置
+#singleServerConfig:
+#  address: "redis://192.168.66.37:6379"
+#  password: ab
+#  clientName: null
+#  database: 7 #选择使用哪个数据库0~15
+#  idleConnectionTimeout: 10000
+#  pingTimeout: 1000
+#  connectTimeout: 10000
+#  timeout: 3000
+#  retryAttempts: 3
+#  retryInterval: 1500
+#  reconnectionTimeout: 3000
+#  failedAttempts: 3
+#  subscriptionsPerConnection: 5
+#  subscriptionConnectionMinimumIdleSize: 1
+#  subscriptionConnectionPoolSize: 50
+#  connectionMinimumIdleSize: 32
+#  connectionPoolSize: 64
+#  dnsMonitoringInterval: 5000
+#  #dnsMonitoring: false
+#
+#threads: 0
+#nettyThreads: 0
+#codec:
+#  class: "org.redisson.codec.JsonJacksonCodec"
+#transportMode: "NIO"
+
+#
+#redisson:
+#  singleServerConfig:
+#    address: 192.168.66.37:6379
+#    password: ab
+
+#nacos:
+#  config:
+#    server-addr: 127.0.0.1:8848
+#  discovery:
+#    server-addr: 127.0.0.1:8848
+
+
+#rsa:
+#  encrypt:
+#    privateKey: 'MIICXAIBAAKBgHIdeLTQJcYuXqTw07vEi8Zwucu5Jn1bRleCkq+gwyQ6zmpoQjeU
+#                 18+nwL9UWqyG8TG2KELC7oxUhhEozNl0l41Xv5HAHgtVMd0P30IvCA8hT/H/XVB+
+#                 fvGTbXCvD3ps9fwhKO0zXP9rlGaQ1l6kPq/DgQo1RXV4SbBVeTrU/UvLAgMBAAEC
+#                 gYBaQxF9A789OORH1u3Dcb2VowhzKepV8WJ8SZ25KZHxEErBQ+JMkID7kZcWP6TR
+#                 HpOdXJYP6JxDh3/cBsexoVVVtrTGgb4RE9K44Qkusdn2fpmeqCubQ1OAQtr5D+5w
+#                 zv/+WXohdSn8I9YR2OTy6UTsvcAFY4SallgllzMW94gc4QJBAMyO6auCfYlPPRBY
+#                 fDdllQ8J4znMZwFnyIlh38uyYokbWFnAvQrefoXR8v9DISopfXDg5NuxXeXz6Kan
+#                 lrvgVDMCQQCOz/63495h/ui2mE5h3hysIsVoMDW739JqtuQ5pBrQ/ru2nSTA+hO/
+#                 nSXaLS7O/trb+GaFJ8+S9CWdnCWSVlIJAkEAsjYvzYQ56k5mXL86OOj/G8L5e3lg
+#                 pBDO3SGv377hqaFxL4CDMdz1TZDDqy/IzPqolpbXy66Sp6v/nHGVGMkvkQJAQ860
+#                 JYHXG/ZZbiEgzk0UlhKoYlDJopuiH7MY59loNiVM4Wb5hXr3l3o497+OQxA0wE7P
+#                 9pcxcpfjqFL0b+f2aQJBAJ66QNb2r1Unvodcd1PEEeVl+qrwJ2pmJnqFie5RI96V
+#                 JNLAty+BJjg6Rs+VpAasgBtxtCQVJpXutjpOLmGuPwI='
+#    publicKey: 'MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgHIdeLTQJcYuXqTw07vEi8Zwucu5
+#                Jn1bRleCkq+gwyQ6zmpoQjeU18+nwL9UWqyG8TG2KELC7oxUhhEozNl0l41Xv5HA
+#                HgtVMd0P30IvCA8hT/H/XVB+fvGTbXCvD3ps9fwhKO0zXP9rlGaQ1l6kPq/DgQo1
+#                RXV4SbBVeTrU/UvLAgMBAAE='
+#    showLog: true
+
+spring:
+  freemarker:
+#    模板的 文件位置
+    template-loader-path: classpath:/templates/
