@@ -65,3 +65,5 @@ spring:
   freemarker:
 #    模板的 文件位置
     template-loader-path: classpath:/templates/
+server:
+  port: 8888
